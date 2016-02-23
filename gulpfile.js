@@ -1,27 +1,40 @@
-/*var gulp = require('gulp');
-var minify = require('gulp-minify');
-var jshint = require('gulp-jshint');
-var jasmine = require('gulp-jasmine');
- 
-gulp.task('compress', function() {
-    gulp.src('src/*.js')
-        .pipe(minify())
-        .pipe(gulp.dest('dist'))
+var path = require('path'),
+    gulp = require('gulp'),
+    del = require('del'),
+    useref = require('gulp-useref'),
+    uglify = require('gulp-uglify'),
+    gulpIf = require('gulp-if'),
+    cssnano = require('gulp-cssnano'),
+    htmlmin = require('gulp-htmlmin');
+
+// Options
+var dest = 'build';
+
+// Main tasks
+gulp.task('default', ['clean'], function(){
+    gulp.start('compress', 'font');
 });
 
-gulp.task('lint', function() {
-    gulp.src(['src/*.js', 'spec/*.js'])
-        .pipe(jshint('.jshintrc'))
-		.pipe(jshint.reporter('jshint-stylish')); 
-});
+// Sub task
+gulp.task('clean', clean);
+gulp.task('compress', compress);
+gulp.task('font', font);
 
-gulp.task('test', function () {
-    return gulp.src('spec/src/*.js')
-        // gulp-jasmine works on filepaths so you can't have any plugins before it
-        .pipe(jasmine({
-            includeStackTrace: true
-        }));
-});
+// Implementation
+function clean() {
+    del.sync(dest);
+}
 
+function compress(){
+    return gulp.src('index.html')
+        .pipe(useref())
+        .pipe(gulpIf('*.js', uglify()))
+        .pipe(gulpIf('*.css', cssnano()))
+        .pipe(gulpIf('*.htlm', htmlmin()))
+        .pipe(gulp.dest(dest));
+}
 
-gulp.task('default', ['compress', 'lint', 'test']);*/
+function font() {
+    return gulp.src(path.join('vendor', 'Materialize', 'dist', 'font', '**', '*'))
+        .pipe(gulp.dest(path.join(dest, 'font')));
+}

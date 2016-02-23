@@ -1,0 +1,41 @@
+/*.cyan darken-4
+#ef5350 red lighten-1*/
+
+h4 {
+    position: relative;
+}
+
+h4 .tda-text-title {
+    margin-left: 40px;
+}
+
+h4 i{
+    line-height: inherit!important;
+    font-size: inherit!important;
+    position: absolute;
+}
+
+blockquote {
+
+}
+
+.tda-cv-container {
+    width: 70%;
+    margin: 30px auto;
+    background-color: #E4E4E4;
+}
+
+.tda-cv-container .row{
+    margin-bottom: 0;
+}
+
+
+.tda-container {
+    padding: 20px;
+}
+
+
+.tda-avatar {
+    margin: 0!important;
+    padding: 0!important;
+}
