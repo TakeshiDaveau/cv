@@ -1,0 +1,15 @@
+{
+  "name": "CV Takeshi Daveau",
+  "homepage": "https://github.com/TakeshiDaveau/cv",
+  "description": "CV",
+  "version": "0.0.1",
+  "license": "MIT",
+  "authors": [
+    "TakeshiDaveau <TakeshiDaveau.dev@gmail.com>"
+  ],
+  "dependencies": {
+    "react": "~0.14.7",
+    "Materialize": "materialize#~0.97.5",
+    "react-intl": "~1.2.2"
+  }
+}

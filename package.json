@@ -1,0 +1,13 @@
+{
+  "name": "CV",
+  "version": "0.0.1",
+  "author": "TakeshiDaveau <TakeshiDaveau.dev@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/TakeshiDaveau/cv",
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-jshint": "2.0.0",
+    "gulp-minify": "0.0.5"
+  }
+}
