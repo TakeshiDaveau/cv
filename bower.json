@@ -10,6 +10,7 @@
   "dependencies": {
     "react": "~0.14.7",
     "Materialize": "materialize#~0.97.5",
-    "react-intl": "~1.2.2"
+    "react-intl": "~1.2.2",
+    "material-design-icons": "~2.2.0"
   }
 }
