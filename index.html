@@ -4,7 +4,7 @@
 
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+	<meta charset="UTF-8">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -19,64 +19,180 @@
 <body>
 
 	<div class="tda-cv-container z-depth-3">
-		<header class="row flex">
-			<aside class="col s3 tda-avatar red lighten-1 blue-grey-text text-lighten-5 z-depth-2 valign-wrapper">
+		<header class="card row flex">
+			<aside class="col s3 tda-avatar valign-wrapper">
 				<img class="responsive-img circle valign"  src="img/avatar.jpg">
 			</aside>
-			<div class="col s9 tda-container cyan darken-4 blue-grey-text text-lighten-5 ">
-				<h1>Takeshi Daveau</h1>
-				<h2>Front end developper</h2>
-				<blockquote>
-					<i class="material-icons red-text text-lighten-1 large">format_quote</i>
-					Hello my name's Takeshi Daveau, I'm a web developper specialized in front end technologies. Bla bla bla
+			<div class="col s9 tda-container" style="align-self:flex-end;">
+				<h1 class="darker-color">Takeshi Daveau</h1>
+				<h2 class="dark-color">Front end developper</h2>
+				<blockquote class="normal-color">
+					Hello my name's Takeshi Daveau, I'm a web developper specialized in front-end technologies.
 				</blockquote>
 			</div>
 		</header>
 		<div class="tda-cv-content row flex">
-			<aside class="col s3 red lighten-1 blue-grey-text text-lighten-5 tda-container z-depth-2">
-				<section class="tda-contact">
-					<h4>
-						<i class="material-icons">assignment_ind</i><span class="tda-text-title">Contact</span>
-					</h4>
+			<aside class="col s3 tda-container alt-bcg z-depth-2">
+				<section class="tda-contact-phone">
+					<div class="row">
+						<i class="material-icons col s2">contact_phone</i>
+						<address class="col s10 tda-content">
+							(+33) 6 95 64 44 09<br>
+							<span class="tda-sub-info">Personal</span>
+						</address>
+					</div>
 				</section>
-				<section class="tda-skills">
-					<div>
-						<i class="material-icons">code</i>
-						<h4>Technical skills</h4>
-
+				<section class="tda-contact-mail">
+					<div class="row">
+						<i class="material-icons col s2">contact_mail</i>
+						<address class="col s10 tda-content">
+							takeshi.daveau(at)gmail.com<br>
+							<span class="tda-sub-info">Personal</span><br>
+							tdaveau(at)objectif.paris<br>
+							<span class="tda-sub-info">Work</span>
+						</address>
+					</div>
+				</section>
+				<section class="tda-address">
+					<div class="row">
+						<i class="material-icons col s2">location_on</i>
+						<address class="col s10 tda-content">
+							13 rue Béranger<br>
+							75003, Paris<br>
+							France
+						</address>
 					</div>
 				</section>
 				<section class="tda-language">
-					<h4>
-						<i class="material-icons">chat</i><span class="tda-text-title">Language</span>
-					</h4>
+					<div class="row">
+						<i class="material-icons col s2">code</i>
+						<h3 class="col s10">Technical Skills</h3>
+						<ul class="offset-s2 col s10 tda-content">
+							<li class="tda-technical-skills">
+								Javascript Front
+								<input type="range" value="92" min="0" max="100" readonly="true"/>
+							</li>
+							<li class="tda-technical-skills">
+								HTML
+								<input type="range" value="90" min="0" max="100" readonly="true"/>
+							</li>
+							<li class="tda-technical-skills">
+								CSS
+								<input type="range" value="68" min="0" max="100" readonly="true"/>
+							</li>
+							<li class="tda-technical-skills">
+								NodeJS
+								<input type="range" value="72" min="0" max="100" readonly="true"/>
+							</li>
+							<li class="tda-technical-skills">
+								Java EE
+								<input type="range" value="75" min="0" max="100" readonly="true"/>
+							</li>
+							<li class="tda-technical-skills">
+								SQL
+								<input type="range" value="70" min="0" max="100" readonly="true"/>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tda-language">
+					<div class="row">
+						<i class="material-icons col s2">chat</i>
+						<div class="col s10 tda-content">
+							<span>French</span><br>
+							<span class="tda-sub-info">Native speaker</span><br>
+							<span>English</span><br>
+							<span class="tda-sub-info">Good working knwoledge</span><br>
+						</div>
+					</div>
 				</section>
 			</aside>
 			<div class="col s9 tda-container">
 				<section class="card white tda-work-container">
-					<div class="card-content row">
-						<span class="card-title">Professional XP</span>
+					<div class="card-content">
+						<div class="card-title row">
+							<span class="col s1 darker-color center-align"><i class="material-icons small">done_all</i></span>
+							<span class="col s11"><h3>Work Experiences</h3></span>
+						</div>
+						<div class="tda-work-content">
+							<div class="row flex tda-work-item">
+								<span class="col s1">
+									<img src="img/logo/artips.jpg" class="tda-img-icon">
+								</span>
+								<div class="col s11">
+									<h4>Tech leader<span class="tda-year">Since Apr 2016</span></h4>
+									<p class="tda-location black-color"><a href="http://artips.fr/" target="_blank">Artips</a>&nbsp;// Paris, France</p>
+									<p class="description">Work on various project from e-learning platform to mobile apps.</p> 
+								</div>
+							</div>
+							<div class="row flex tda-work-item">
+								<span class="col s1">
+									<img src="img/logo/cegedim.jpg" class="tda-img-icon">
+								</span>
+								<div class="col s11">
+									<h4>Tech leader AngularJS<span class="tda-year">Aug 2015 - Apr 2016</span></h4>
+									<p class="tda-location black-color"><a href="http://www.cegedim.fr/Pages/default.aspx" target="_blank">Cegedim</a>&nbsp;// Boulogne, France</p>
+									<p class="description">Development from scratch of <a href="" targe="_blank">KISS</a>, a web dematerialization portal for e-invoicing</p> 
+								</div>
+							</div>
+							<div class="row flex tda-work-item">
+								<span class="col s1">
+									<img src="img/logo/bpi.png" class="tda-img-icon">
+								</span>
+								<div class="col s11">
+									<h4>Web developper Java EE<span class="tda-year">Aug 2014 - Jul 2015</span></h4>
+									<p class="tda-location black-color"><a href="http://www.bpifrance.fr/" target="_blank">Bpifrance</a>&nbsp;// Paris, France</p>
+									<p class="description">Software maintenance & evolution for for the project <a href="http://www.bpifrance.fr/Toutes-nos-solutions/Aide-aux-projets-collaboratifs" target="_blank">Supports Collaborative Projects of Innovation</a></p> 
+								</div>
+							</div>
+							<div class="row flex tda-work-item">
+								<span class="col s1">
+									<img src="img/logo/objectif.png" class="tda-img-icon">
+								</span>
+								<div class="col s11">
+									<h4>Hybride mobile developper<span class="tda-year">May 2013 - Jul 2014</span></h4>
+									<p class="tda-location black-color"><a href="http://www.objectif-informatique.fr/" target="_blank">Objectif Informatique</a>&nbsp;// Paris, France</p>
+									<p class="description">Development of <a href="http://tribs.fr/" target="_blank">Tribs</a>, a corporate social network.</p> 
+								</div>
+							</div>
+							<div class="row flex tda-work-item">
+								<span class="col s1">
+									<img src="img/logo/sopra.png" class="tda-img-icon">
+								</span>
+								<div class="col s11">
+									<h4>IT Analyst<span class="tda-year">Sept 2011 - Sep 2012</span></h4>
+									<p class="tda-location black-color"><a href="http://www.bpifrance.fr/" target="_blank">Sopra Banking</a>&nbsp;// Brussels, Belgium</p>
+									<p class="description">IT System migration and User testing of Thaler, a retail banking software.</a></p> 
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 				<section class="card white tda-education-container">
 					<div class="card-content">
 						<div class="card-title row">
-							<span class="col s1"><i class="material-icons medium">school</i></span>
-							<span class="col s11"><h4>Education</h4></span>
+							<span class="col s1 darker-color center-align"><i class="material-icons small">school</i></span>
+							<span class="col s11"><h3>Education</h3></span>
 						</div>
 						<div class="tda-education-content">
 							<div class="row flex tda-education-item">
-								<span class="col s1 tda-timeline">&nbsp;</span>
+								<span class="col s1 tda-timeline">
+									<span class="tda-circle">&nbsp;</span>
+								</span>
 								<div class="col s11">
-									<h5>Master in Computer Science <span class="tda-year">2008 - 2011</span></h5>
-									<span class="tda-location">Polytech'Nantes</span>
+									<h4>Master's degree in Computer Science and Engineering<span class="tda-year">2008 - 2011</span></h4>
+									<p class="tda-location black-color"><a href="http://web.polytech.univ-nantes.fr/" target="_blank">Polytech'Nantes</a>&nbsp;// Nantes, France</p>
+									<p class="description">A 3 years diploma in Software Engineering and Information Systems Architecture.</p> 
 								</div>
 							</div>
 							<div class="row flex tda-education-item">
-								<span class="col s1 tda-timeline">&nbsp;</span>
+								<span class="col s1 tda-timeline">
+									<span class="tda-circle">&nbsp;</span>
+								</span>
 								<div class="col s11">
-									<h5>Master in Computer Science <span class="tda-year">2008 - 2011</span></h5>
-									<span class="tda-location">Polytech'Nantes</span>
+									<h4>Technical university degree<span class="tda-year">2006 - 2008</span></h4>
+									<p class="tda-location black-color"><a href="http://www.iut.univ-angers.fr/fr/index.html" target="_blank">University Institute of Technology</a>&nbsp;// Angers, France</p>
+									<p class="description">A 2 years diploma in Electrical Engineering and Computer Science.</p> 
 								</div>
 							</div>
 						</div>
@@ -84,17 +200,82 @@
 				</section>
 				<section class="card white tda-knowledge-container">
 					<div class="card-content">
-						<span class="card-title">Knowledge</span>
+						<div class="card-title row">
+							<span class="col s1 darker-color center-align"><i class="material-icons small">device_hub</i></span>
+							<span class="col s11"><h3>Knowledge</h3></span>
+						</div>
+						<div class="row tda-knwoledge-content">
+							<div class="offset-s1 col s11">
+								<div class="chip">
+									<img src="img/theme/agile.jpg" alt="Contact Person">
+									Agile development
+								</div>
+								<div class="chip">
+									<img src="img/theme/data1.jpg" alt="Contact Person">
+									Data modeling
+								</div>
+								<div class="chip">
+									<img src="img/theme/testing.jpg" alt="Contact Person">
+									Unit testing
+								</div>
+								<!-- A mettre -->
+								<div class="chip">
+									<img src="img/theme/rest.png" alt="Contact Person">
+									Rest API
+								</div>
+								<div class="chip">
+									<img src="img/theme/websocket.png" alt="Contact Person">
+									Web Socket
+								</div>
+								<div class="chip">
+									<img src="img/theme/build.jpg" alt="Contact Person">
+									Front-end build
+								</div>
+								<div class="chip">
+									<img src="img/theme/front.jpg" alt="Contact Person">
+									HTTP Protocol
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 				<section class="card white tda-interests-container">
 					<div class="card-content">
-						<span class="card-title">Interests</span>
+						<div class="card-title row">
+							<span class="col s1 darker-color center-align"><i class="material-icons small">stars</i></span>
+							<span class="col s11"><h3>Interests</h3></span>
+						</div>
+						<div class="row tda-interests-content">
+							<div class="offset-s1 col s2 center-align">
+								<i class="material-icons small dark-color">music_note</i><br/>
+								<span>Listen to music</span>
+							</div>
+							<div class="offset-s1 col s2 center-align">
+								<i class="material-icons small dark-color">cake</i><br/>
+								<span>Cooking</span>
+							</div> 
+							<div class="offset-s1 col s2 center-align">
+								<i class="material-icons small dark-color">flight_takeoff</i><br/>
+								<span>Travel</span>
+							</div>
+							<div class="offset-s1 col s2 center-align">
+								<i class="material-icons small dark-color">chrome_reader_mode</i><br/>
+								<span>Reading</span>
+							</div>
+						</div>
 					</div>
 				</section>
 			</div>
+			
 		</div>
-
+		<footer class="page-footer">
+			<div class="footer-copyright darker-bcg">
+				<div class="container">
+					© 2015 Copyright Takeshi Daveau
+					<a class="grey-text text-lighten-4 right" href="#!">www.takeshi-daveau.fr</a>
+				</div>
+			</div>
+		</footer>
 	</div>
 
     <!-- build:js js/vendor.js -->
