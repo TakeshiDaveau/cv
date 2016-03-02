@@ -1,12 +1,7 @@
-/*.cyan darken-4
-#ef5350 red lighten-1*/
-
 /* COLOR */
 html {
 	color: #727375;
 }
-
-
 .alt-bcg {
 	background-color: #F45B69!important;
 }
@@ -16,23 +11,19 @@ html {
 .white-bcg {
 	background-color: #fff;
 }
-
 h1,
 h3,
 .darker-color {
 	color: #114B5F!important;
 }
-
 h2,
 h4,
 .dark-color {
 	color: #028090!important;
 }
-
 .alt-color {
 	color: #F45B69!important;
 }
-
 .black-color {
 	color: #263238 !important
 }
@@ -63,97 +54,102 @@ h4 {
     margin: 1.14rem 0 0.1rem 0;
 }
 
-/* */
+/* GENERAL */
 .row.flex {
     display: flex;
 }
-
 .chip {
 	margin: 5px 0;
 }
-
 blockquote {
     border: none;
 	margin-top:0;
 	padding-left: 0.5rem;
 }
-
 .card-title .material-icons {
 	margin: 1.46rem 0 1.168rem 0;
 }
-
 footer.page-footer{
 	padding: 0;
 	margin: -5px 0 0 0;
 }
-
+::selection{
+    background-color: #F45B69;
+    color: #fff;
+}
+/* Firefox */
+::-moz-selection {
+    background-color: #F45B69;
+    color: #fff;
+}
 /* CONTAINER */
 .tda-cv-container {
     width: 80%;
     margin: 30px auto;
     background-color: #E4E4E4;
 }
-
 .tda-cv-container header{
     min-height: 200px;
 }
-
 .tda-cv-container .row{
     margin-bottom: 0;
 }
-
-
 .tda-container {
 	padding-top: 10px!important;
 }
-
 /* COMPONENTS */
 .tda-avatar {
-    /*min-height: 200px;*/
+    padding-top: 20px!important;
+    padding-bottom: 20px !important;
 }
-
 .tda-avatar img {
     margin: auto;
     width: 70%;
-    height: 60%;
     border: 5px solid rgba(2, 128, 144, 0.7);
 }
-
 .tda-timeline {
-    /* Patternify #006064 opcaity 0.7 */
-    /*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAEElEQVQIW2NkwAfiUn1g0gAK+gERRsXmpQAAAABJRU5ErkJggg==) center repeat-y;
-	/* Patternify #EF5350 opcaity 0.3 */
-	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAF0lEQVQIW2NkQANfozLqYULcy2Y0wtgARNoEAqH+ONAAAAAASUVORK5CYII=) center repeat-y;
+	/* Patternify #F45B69 opcaity 1 */
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAF0lEQVQIW2NkQANfojP/w4R4lk5nhLEBSuYEAo+NyvsAAAAASUVORK5CYII=) center repeat-y;
 }
-
 .tda-timeline .tda-circle {
 	display: block;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: #fff;
-    border: 3px solid rgba(244, 91, 105, 0.5);
+    border: 3px solid rgba(244, 91, 105, 1);
     margin: auto;
 }
-
 .tda-year {
 	float: right;
 	font-size: 1rem;
 }
-
+.tda-img-icon {
+    width:100%;
+    margin: 1.14rem 0 0.1rem 0;
+}
 /* EDUCATIONAL PART */
 .tda-education-content .tda-education-item:not(:first-child) .tda-timeline  .tda-circle,
 .tda-education-content .tda-education-item:first-child .tda-timeline {
     margin-top: 20px;
 }
-
-/* WORK PART */
-.tda-img-icon {
-	width:100%;
-	margin: 1.14rem 0 0.1rem 0;
-}
-
 /* ASIDE */
+.tda-cv-content aside.tda-container li::selection,
+.tda-cv-content aside.tda-container i::selection,
+.tda-cv-content aside.tda-container h3::selection,
+.tda-cv-content aside.tda-container span::selection,
+.tda-cv-content aside.tda-container address::selection {
+    background-color: #fff;
+    color: #F45B69;
+}
+.tda-cv-content aside.tda-container li::-moz-selection,
+.tda-cv-content aside.tda-container i::-moz-selection,
+.tda-cv-content aside.tda-container h3::-moz-selection,
+.tda-cv-content aside.tda-container span::-moz-selection,
+.tda-cv-content aside.tda-container address::-moz-selection {
+    background-color: #fff;
+    color: #F45B69;
+}
 .tda-cv-content aside.tda-container {
 	padding:0;
 	color: #fff;
@@ -167,7 +163,6 @@ footer.page-footer{
 .tda-cv-content aside.tda-container section {
 	padding: 20px 0 10px 0;
 }
-
 .tda-cv-content aside.tda-container .tda-content {
 	padding-left: 0;
 	padding-bottom: 30px;
@@ -175,11 +170,9 @@ footer.page-footer{
 	font-weight: 300;
 	font-size: 1.1rem;
 }
-
 .tda-cv-content aside.tda-container section:last-child  .tda-content{
 	border: none;
 }
-
 .tda-cv-content aside.tda-container .tda-sub-info {
 	color: #EF9A9A;
 	font-weight: 500;
@@ -188,22 +181,18 @@ footer.page-footer{
 .tda-cv-content aside.tda-container address {
 	font-style: normal;
 }
-
 .tda-language .tda-content { 
 	margin-bottom:0;
 }
-
 .tda-language h3 {
 	margin-top: 0!important;
     font-weight: 300!important;
     padding-left: 0!important;
     text-transform: capitalize!important;
 }
-
 .tda-technical-skills {
 	font-size: 0.8rem;
 }
-
 /* INPUT STYLING */
 input[type=range] {
 	-webkit-appearance: none;
@@ -215,8 +204,6 @@ input[type=range] {
 	margin: 5px 0;
 	border: none;
 }
-
-/* Range button WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
 	background: #ffffff;
     width: 9px;
@@ -224,7 +211,6 @@ input[type=range]::-webkit-slider-thumb {
     margin-top: -3px;
 	position: relative;
 }
-
 input[type=range]::-webkit-slider-thumb:after {
 	height: 3px;
     content: "-";
@@ -237,39 +223,31 @@ input[type=range]::-webkit-slider-thumb:after {
     bottom: 0;
     background-color: white;
 }
-
-/* All the same stuff for Firefox */
 input[type=range]::-moz-range-thumb {
 	background: #ffffff;
     width: 9px;
     height: 9px;
     margin-top: -3px;
 }
-
-/* All the same stuff for IE */
 input[type=range]::-ms-thumb {
 	background: #ffffff;
     width: 9px;
     height: 9px;
     margin-top: -3px;
 }
-
 /* Range scale */
 input[type=range]::-webkit-slider-runnable-track {
 	background: #EF9A9A;
 }
-
 input[type=range]::-moz-range-track {
 	background: #EF9A9A;
 }
-
 input[type=range]::-ms-track {
 	background: #EF9A9A;
 }
 input[type=range]::-ms-fill-lower {
 	background: #EF9A9A;
 }
-
 input[type=range]::-ms-fill-upper {
 	background: #EF9A9A;
 }

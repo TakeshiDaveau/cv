@@ -12,13 +12,14 @@ var dest = 'build';
 
 // Main tasks
 gulp.task('default', ['clean'], function(){
-    gulp.start('compress', 'font');
+    gulp.start('compress', 'font', 'images');
 });
 
 // Sub task
 gulp.task('clean', clean);
 gulp.task('compress', compress);
 gulp.task('font', font);
+gulp.task('images', images);
 
 // Implementation
 function clean() {
@@ -30,11 +31,17 @@ function compress(){
         .pipe(useref())
         .pipe(gulpIf('*.js', uglify()))
         .pipe(gulpIf('*.css', cssnano()))
-        .pipe(gulpIf('*.htlm', htmlmin()))
+        .pipe(gulpIf('*.html', htmlmin()))
         .pipe(gulp.dest(dest));
 }
 
 function font() {
     return gulp.src(path.join('vendor', 'Materialize', 'dist', 'font', '**', '*'))
         .pipe(gulp.dest(path.join(dest, 'font')));
+}
+
+function images() {
+    return gulp.src(path.join('img', '**', '*'))
+        //.pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
+        .pipe(gulp.dest(path.join(dest, 'img')));
 }
