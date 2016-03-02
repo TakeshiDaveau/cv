@@ -42,6 +42,5 @@ function font() {
 
 function images() {
     return gulp.src(path.join('img', '**', '*'))
-        //.pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
         .pipe(gulp.dest(path.join(dest, 'img')));
 }
